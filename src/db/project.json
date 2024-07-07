@@ -1,7 +1,7 @@
 [
     {
         "name": "Japanese Izakaya",
-        "description": "A Japanese Izakaya themed website that showcases the menu and location of the restaurant. The website is built using Angular and NestJS (a backend framework based on Node.js) with a PostgreSQL database. The website features menu items stored from the backend, various user functionalities such as order history or reservation history and card payment (where Stripe was used, for the purpose of the project, payments can be done with a test cred card generated online).",
+        "description": "A Japanese Izakaya themed website that showcases the menu and location of the restaurant. The website is built using Angular and NestJS (a backend framework based on Node.js) with a PostgreSQL database. The website features menu items stored from the backend, various user functionalities such as order history or reservation history and card payment (where Stripe was used, for the purpose of the project, payments can be done with a test credit card generated online).",
         "githubUrl": "https://github.com/StroeAdrianFF/Japanese-Izakaya",
         "liveUrl": "https://adrian-stroe.ro/izakaya/home",
         "imgLink": "/assets/images/izakaya.jpg",
