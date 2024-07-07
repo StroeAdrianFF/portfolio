@@ -1,0 +1,38 @@
+<div class="card fade-in">
+    <p-carousel [value]="projects" [numVisible]="1" [numScroll]="1" [circular]="false"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-project pTemplate="item">
+            <div class="border-1 surface-border border-round m-2 p-3">
+                <div class="mb-3">
+                    <div class="relative mx-auto">
+                        <img [src]="project.imgLink" [alt]="project.name" class="w-full border-round" loading="lazy"/>
+                    </div>
+                </div>
+                <div class="mb-3 font-bold">
+                    {{ project.name }}
+                </div>
+                <div class="text-justify">
+                    {{ project.description }}
+                </div>
+                <div class="flex justify-content-end mt-4">
+                        <p-button icon="pi pi-github" 
+                        [outlined]="true" 
+                        [rounded]="true" 
+                        severity="contrast" 
+                        [pTooltip]="project.disabled ? project.disabledMessage : 'Check out the github repository'"
+                        tooltipPosition="top" 
+                        [disabled]="project.disabled"
+                        (onClick)="openLink(project.githubUrl)"/>
+                        <p-button icon="pi pi-link" 
+                        styleClass="ml-2" 
+                        [outlined]="true" 
+                        [rounded]="true" 
+                        severity="contrast"  
+                        pTooltip="Check out the LIVE version of the app"
+                        tooltipPosition="top"
+                        (onClick)="openLink(project.liveUrl)"/>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>
