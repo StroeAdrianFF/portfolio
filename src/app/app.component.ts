@@ -7,6 +7,7 @@ import { AboutComponent } from '../components/about/about.component';
 import { ResumeComponent } from '../components/resume/resume.component';
 import { ProjectsComponent } from '../components/projects/projects.component';
 import { ButtonModule } from 'primeng/button';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -31,7 +32,19 @@ export class AppComponent implements OnInit {
   navbarItems: MenuItem[] | undefined = undefined;
   showButton: boolean = false;
 
-  constructor() {}
+  constructor(
+    private title: Title,
+    private meta: Meta
+  ) {
+    this.title.setTitle('Adrian Stroe');
+    this.meta.addTags([
+      { name: 'description', content: 'Personal portfolio of Adrian Stroe, a Software Developer specializing in Angular and Node.js based backend languages' },
+      { name: 'keywords', content: 'Angular, SEO, Software, Developer, Resume, Portfolio, TypeScript, NestJS, Node.js, Node, JS, JavaScript, CV, SCSS, PostgreSQL' },
+      { property: 'og:title', content: 'Page Title' },
+      { property: 'og:description', content: 'Page Description' },
+      { property: 'og:type', content: 'website' }
+    ]);
+  }
 
   ngOnInit(): void {
     this.createNavbarItems();
