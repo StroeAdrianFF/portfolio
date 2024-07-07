@@ -1,1 +1,128 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./assets/fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype'),
+        url('./assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+
+    body {
+        height: 100%;
+        margin: 0;
+    }
+}
+
+// --------------------- Menu --------------------- //
+
+.p-menubar {
+    border: none;
+}
+
+p-menubar {
+    display: flex;
+    justify-content: right;
+}
+
+p-menubarsub {
+    position: relative;
+    top: 0.625rem;
+}
+
+@media screen and (max-width: 960px) {
+    p-menubarsub {
+        right: 7.5rem;
+
+        .p-menubar-root-list {
+            width: 7.2rem;
+        }
+    }
+
+    .p-menubar {
+        .p-menubar-button {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+// --------------------- Buttons --------------------- //
+.social-buttons {
+    button {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+}
+
+
+// --------------------- Image --------------------- //
+p-image {
+    width: 25rem;
+    height: 25rem;
+    &.profile-image {
+        span {
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+// --------------------- Carousel --------------------- //
+p-carousel {
+    width: 40rem;
+    display: block;
+    margin: 0 auto;
+
+    .surface-border{
+        min-height: 37.5rem;
+    }
+}
+
+
+// --------------------- Animations --------------------- //
+.fade-in {
+    animation: fadeIn;
+    animation-timeline: view();
+    animation-range: entry 0; // makes animation happen when element enters viewport
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    } 
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+// --------------------- Scrollbar --------------------- //
+::-webkit-scrollbar {
+    width: 0.75rem;
+    height: 0.75rem; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #000; 
+    border-radius: 0.625rem; 
+    border: 0.188rem solid transparent;
+    background-clip: content-box; 
+  }
+  
