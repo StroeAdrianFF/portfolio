@@ -1,0 +1,71 @@
+[
+    {
+        "company": "mindit.io",
+        "position": "Front End Developer",
+        "date": "June 2022 - Still here 😉",
+        "icon": "pi pi-briefcase",
+        "color": "#9C27B0",
+        "location": "Bucharest, Romania - Remote",
+        "description": [
+        "Create components' logic using TypeScript",
+        "Participate in code reviews to assure quality and working functionality",
+        "Write clean code for readability and performance",
+        "Refactor cluttered components for better functionality and readability",
+        "Work on performance changes to have a faster application",
+        "Use SCSS, PrimeNG and Material UI to create a modern looking app",
+        "Write unit tests using Jest for code quality and minimizing errors",
+        "Create/Handle tasks and bugs using Azure DevOps",
+        "Handle Back End data with RxJS to ensure the optimal flow to the Front End",
+        "Consistent work in an Agile methodology",
+        "Talk with BA and QA teams to ensure the successful development of the application",
+        "Use Swagger and Postman for API integration and rigorous data testing",
+        "Collaborate with the Back End team to implement changes and improvements successfully"
+        ]
+    },
+    {
+        "company": "AQUASoft",
+        "position": "Fullstack Developer Intern",
+        "date": "July 2021 - August 2021",
+        "icon": "pi pi-briefcase",
+        "color": "#673AB7",
+        "location": "Bucharest, Romania - Remote",
+        "description": [
+        "Developed a comprehensive backend architecture using Node.js and Express.js, focusing on building scalable and efficient server-side applications",
+        "Engineered a robust frontend using React.js and Redux, ensuring a responsive and intuitive user interface that enhances user experience",
+        "Implemented advanced security measures with JWT (JSON Web Tokens) for authentication. This included the creation of secure login/logout functionalities and route guarding to safeguard user data and application integrity",
+        "Designed and executed back-end routes with Node.js and Express.js, optimizing the application’s data processing and API responses",
+        "Collaborated closely with a team of developers, adapting quickly to feedback and evolving project requirements"
+        ]
+    },
+    {
+        "company": "P.F.A. Vaida Nela",
+        "position": "Web Developer Apprentice",
+        "date": "June 2020 - September 2020",
+        "icon": "pi pi-briefcase",
+        "color": "#3F51B5",
+        "location": "Medgidia, Constanta, Romania - Remote",
+        "description": [
+        "Conceptualized and constructed a fully functional website, starting from initial design to final implementation, using plain JavaScript, CSS, and HTML.",
+        "Used JavaScript to create dynamic and interactive web components, ensuring a seamless user experience without relying on frameworks or libraries.",
+        "Made a responsive and visually appealing user interface, utilizing advanced CSS techniques for layout, styling, and animations that adapt to different devices and screen sizes.",
+        "Structured and organized HTML to create a clean, accessible, and SEO-friendly website structure.",
+        "Implemented best coding practices to ensure the website’s performance, scalability, and maintainability.",
+        "Worked independently, demonstrating self-motivation, time management, and problem-solving skills throughout the development process."
+        ]
+    },
+    {
+        "company": "Transparency International Romania",
+        "position": "Web Developer Apprentice",
+        "date": "July 2019 - July 2019",
+        "icon": "pi pi-briefcase",
+        "color": "#2196F3",
+        "location": "Bucharest, Romania - On-site",
+        "description": [
+        "Actively maintained and enhanced the organization's website using Drupal 7, ensuring high performance and user satisfaction through regular updates and improvements.",
+        "Implemented database modeling with MySQL, optimizing data structures and relationships to enhance website functionality and efficiency.",
+        "Played a key role in the migration and integration of new features and modules, demonstrating adaptability and proficiency in working with complex content management systems.",
+        "Leveraged my deep understanding of Drupal 7 to customize and extend the website's capabilities, tailoring it to meet specific organizational requirements.",
+        "Ensured the security and integrity of the website's data by implementing best practices in database management and maintenance."
+        ]
+    }
+]
