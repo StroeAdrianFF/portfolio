@@ -45,6 +45,10 @@ p-menubarsub {
         .p-menubar-root-list {
             width: 7.2rem;
         }
+
+        .p-menuitem-link { 
+            padding-left: 0.5rem;
+        }
     }
 
     .p-menubar {
@@ -69,6 +73,7 @@ p-menubarsub {
 p-image {
     width: 25rem;
     height: 25rem;
+
     &.profile-image {
         span {
             img {
@@ -84,7 +89,7 @@ p-carousel {
     display: block;
     margin: 0 auto;
 
-    .surface-border{
+    .surface-border {
         min-height: 37.5rem;
     }
 }
@@ -101,7 +106,8 @@ p-carousel {
     from {
         opacity: 0;
         scale: 0.5;
-    } 
+    }
+
     to {
         opacity: 1;
         scale: 1;
@@ -112,17 +118,48 @@ p-carousel {
 // --------------------- Scrollbar --------------------- //
 ::-webkit-scrollbar {
     width: 0.75rem;
-    height: 0.75rem; 
-  }
-  
-  ::-webkit-scrollbar-track {
+    height: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
     background: transparent;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #000; 
-    border-radius: 0.625rem; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 0.625rem;
     border: 0.188rem solid transparent;
-    background-clip: content-box; 
-  }
-  
+    background-clip: content-box;
+}
+
+
+@media screen and (max-width: 415px) {
+    .about-section {
+        width: 20rem;
+        margin-left: 2rem !important;
+    }
+
+    p-menubar {
+        width: 23rem;
+    }
+
+    p-image {
+        margin-top: 5rem;
+        width: 19rem;
+        height: 19rem;
+
+        img {
+            width: 19rem;
+            height: 19rem;
+        }
+    }
+
+    p-carousel {
+        width: 20rem;
+    }
+
+    .scroll-button {
+        right: 3rem !important;
+    }
+
+}
