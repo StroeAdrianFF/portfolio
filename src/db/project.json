@@ -6,7 +6,57 @@
         "liveUrl": "https://adrian-stroe.ro/izakaya/home",
         "imgLink": "/assets/images/izakaya.jpg",
         "disabled": true,
-        "disabledMessage": "The GitHub repository is private, but you can still view the website."
+        "disabledMessage": "The GitHub repository is private, but you can still view the website.",
+        "tags": [
+            {
+                "tagColorLeft": "#E0234E",
+                "tagColorRight": "#A81D3C",
+                "svgPath": "../assets/svgs/angular.svg",
+                "tagName": "Angular"
+            },
+            {
+                "tagColorLeft": "#336791",
+                "tagColorRight": "#204d74",
+                "svgPath": "../assets/svgs/postgresql.svg",
+                "tagName": "PostgreSQL"
+            },
+            {
+                "tagColorLeft": "#F0DB4F",
+                "tagColorRight": "#E5B928",
+                "svgPath": "../assets/svgs/javascript.svg",
+                "tagName": "JavaScript"
+            },
+            {
+                "tagColorLeft": "#3178C6",
+                "tagColorRight": "#225B94",
+                "svgPath": "../assets/svgs/typescript.svg",
+                "tagName": "TypeScript"
+            },
+            {
+                "tagColorLeft": "#E0234E",
+                "tagColorRight": "#A81D3C",
+                "svgPath": "../assets/svgs/nestjs.svg",
+                "tagName": "NestJS"
+            },
+            {
+                "tagColorLeft": "#0288D1",
+                "tagColorRight": "#0277BD",
+                "svgPath": "../assets/svgs/primeng.svg",
+                "tagName": "PrimeNG"
+            },
+            {
+                "tagColorLeft": "#B7178C",
+                "tagColorRight": "#A0147B",
+                "svgPath": "../assets/svgs/rxjs.svg",
+                "tagName": "RxJS"
+            },
+            {
+                "tagColorLeft": "#CF649A",
+                "tagColorRight": "#A14E73",
+                "svgPath": "../assets/svgs/scss.svg",
+                "tagName": "SCSS"
+            }
+        ]
     },
     {
         "name": "Resume",
@@ -15,6 +65,38 @@
         "liveUrl": "https://adrian-stroe.ro",
         "imgLink": "/assets/images/resume.jpg",
         "disabled": false,
-        "disabledMessage": ""
+        "disabledMessage": "",
+        "tags": [
+            {
+                "tagColorLeft": "#E0234E",
+                "tagColorRight": "#A81D3C",
+                "svgPath": "../assets/svgs/angular.svg",
+                "tagName": "Angular"
+            },
+            {
+                "tagColorLeft": "#3178C6",
+                "tagColorRight": "#225B94",
+                "svgPath": "../assets/svgs/typescript.svg",
+                "tagName": "TypeScript"
+            },
+            {
+                "tagColorLeft": "#CF649A",
+                "tagColorRight": "#A14E73",
+                "svgPath": "../assets/svgs/scss.svg",
+                "tagName": "SCSS"
+            },
+            {
+                "tagColorLeft": "#0288D1",
+                "tagColorRight": "#0277BD",
+                "svgPath": "../assets/svgs/primeng.svg",
+                "tagName": "PrimeNG"
+            },
+            {
+                "tagColorLeft": "#B7178C",
+                "tagColorRight": "#A0147B",
+                "svgPath": "../assets/svgs/rxjs.svg",
+                "tagName": "RxJS"
+            }
+        ]
     }
 ]
