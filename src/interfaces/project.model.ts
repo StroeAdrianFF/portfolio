@@ -6,4 +6,12 @@ export interface IProject {
     imgLink: string;
     disabled: boolean;
     disabledMessage: string;
+    tags: IProjectTag[]
+}
+
+interface IProjectTag {
+    tagColorLeft: string;
+    tagColorRight: string;
+    svgPath: string;
+    tagName: string;
 }
