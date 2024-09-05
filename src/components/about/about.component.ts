@@ -4,6 +4,7 @@ import { ImageModule } from 'primeng/image';
 import { TooltipModule } from 'primeng/tooltip';
 import { DownloadService } from '../../shared/services/download.service';
 import { Social } from '../../enums/social.enum';
+import { TagModule } from 'primeng/tag';
 
 @Component({
   selector: 'app-about',
@@ -11,7 +12,8 @@ import { Social } from '../../enums/social.enum';
   imports: [
     ImageModule,
     ButtonModule,
-    TooltipModule
+    TooltipModule,
+    TagModule
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
