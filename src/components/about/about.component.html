@@ -1,47 +1,47 @@
 <div class="about-section flex flex-wrap justify-content-evenly align-items-start">
-    <div class="flex flex-column w-30rem h-25rem justify-content-around">
-      <div>
-        <span>Software Developer</span>
-        <h1 class="m-0 font-bold">Hello, my name is <br> Adrian Stroe</h1>
-      </div>
-      <span class="text-justify">I am a developer specialized in Angular, passionate about gaming and everything related
-        to the Japanese language and culture
-        (始めまして). I like to write code that is as clean and easy to understand as possible, to learn new things, and to be
-        someone the team can rely on when needed.</span>
-      <div class="flex w-20rem justify-content-between align-items-center">
-        <p-button label="Download CV" 
-                  icon="pi pi-download" 
-                  [outlined]="true" 
-                  [rounded]="true" 
-                  severity="contrast"
-                  pTooltip="Download my CV 😊" 
-                  tooltipPosition="top" 
-                  (onClick)="downloadPdf()"/>
-        <p-button icon="pi pi-github" 
-                  [outlined]="true" 
-                  [rounded]="true" 
-                  severity="contrast" 
-                  class="social-buttons" 
-                  pTooltip="Visit my GitHub page" 
-                  tooltipPosition="top"
-                  (onClick)="visitPage(socials.GITHUB)"/>
-        <p-button icon="pi pi-linkedin" 
-                  [outlined]="true" 
-                  [rounded]="true" 
-                  severity="contrast" 
-                  class="social-buttons" 
-                  pTooltip="Open my LinkedIn profile" 
-                  tooltipPosition="top"
-                  (onClick)="visitPage(socials.LINKEDIN)"/>
-        <p-button icon="pi pi-instagram" 
-                  [outlined]="true" 
-                  [rounded]="true" 
-                  severity="contrast" 
-                  class="social-buttons" 
-                  pTooltip="Get in touch on Instagram" 
-                  tooltipPosition="top"
-                  (onClick)="visitPage(socials.INSTAGRAM)"/>
-      </div>
+  <div class="flex flex-column w-30rem h-25rem justify-content-around">
+    <div>
+      <span>Software Developer</span>
+      <h1 class="m-0 font-bold">Hello, my name is <br> Adrian Stroe</h1>
     </div>
-    <p-image src="assets/images/adrian.jpg" width="400px" height="400px" class="profile-image"></p-image>
+    <span class="text-justify">I am a developer specialized in Angular, passionate about gaming and everything related
+      to the Japanese language and culture
+      (始めまして). I like to write code that is as clean and easy to understand as possible, to learn new things, and to be
+      someone the team can rely on when needed.</span>
+    <div class="flex w-20rem justify-content-between align-items-center">
+      <p-button label="Download CV" 
+                icon="pi pi-download" 
+                [outlined]="true" 
+                [rounded]="true" 
+                severity="contrast"
+                pTooltip="Download my CV 😊" 
+                tooltipPosition="top" 
+                (onClick)="downloadPdf()"/>
+      <p-button icon="pi pi-github" 
+                [outlined]="true" 
+                [rounded]="true" 
+                severity="contrast" 
+                class="social-buttons" 
+                pTooltip="Visit my GitHub page" 
+                tooltipPosition="top"
+                (onClick)="visitPage(socials.GITHUB)"/>
+      <p-button icon="pi pi-linkedin" 
+                [outlined]="true" 
+                [rounded]="true" 
+                severity="contrast" 
+                class="social-buttons" 
+                pTooltip="Open my LinkedIn profile" 
+                tooltipPosition="top"
+                (onClick)="visitPage(socials.LINKEDIN)"/>
+      <p-button icon="pi pi-instagram" 
+                [outlined]="true" 
+                [rounded]="true" 
+                severity="contrast" 
+                class="social-buttons" 
+                pTooltip="Get in touch on Instagram" 
+                tooltipPosition="top"
+                (onClick)="visitPage(socials.INSTAGRAM)"/>
+    </div>
   </div>
+  <p-image src="assets/images/adrian.jpg" width="400px" height="400px" class="profile-image"></p-image>
+</div>
