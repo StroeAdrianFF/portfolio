@@ -4,9 +4,17 @@
         <ng-template let-project pTemplate="item">
             <div class="border-1 surface-border border-round m-2 p-3">
                 <div class="mb-3">
-                    <div class="relative mx-auto">
-                        <img [src]="project.imgLink" [alt]="project.name" class="w-full border-round" loading="lazy"/>
+                    <div class="relative mx-auto cursor-pointer">
+                        <img [src]="project.imgLink" [alt]="project.name" class="w-full border-round" loading="lazy" (click)="openLink(project.liveUrl)"/>
                     </div>
+                </div>
+                <div class="project-tags flex flex-wrap gap-2 align-items-center justify-content-evenly mb-2">
+                    @for (tag of project.tags; track $index) {
+                        <p-tag [style]="{'background-image': 'linear-gradient(to right, ' + tag.tagColorLeft + ', ' + tag.tagColorRight + ')'}">
+                            <img width="20px" height="20px" [src]="tag.svgPath" alt="SVG Icon" />
+                            <span class="px-2">{{tag.tagName}}</span>
+                        </p-tag>
+                    }
                 </div>
                 <div class="mb-3 font-bold">
                     {{ project.name }}

@@ -1,47 +1,138 @@
-<div class="about-section flex flex-wrap justify-content-evenly align-items-start">
-  <div class="flex flex-column w-30rem h-25rem justify-content-around">
-    <div>
-      <span>Software Developer</span>
-      <h1 class="m-0 font-bold">Hello, my name is <br> Adrian Stroe</h1>
+  <div class="about-section flex flex-wrap justify-content-evenly align-items-start">
+    <div class="flex flex-column w-30rem h-25rem justify-content-around">
+      <div>
+        <span>Software Developer</span>
+        <h1 class="m-0 font-bold">Hello, my name is <br> Adrian Stroe</h1>
+      </div>
+      <span class="text-justify">I am a developer specialized in Angular, passionate about gaming and everything related
+        to the Japanese language and culture
+        (始めまして). I like to write code that is as clean and easy to understand as possible, to learn new things, and to be
+        someone the team can rely on when needed.</span>
+      <div class="flex w-20rem justify-content-between align-items-center">
+        <p-button label="Download CV" 
+                  icon="pi pi-download" 
+                  [outlined]="true" 
+                  [rounded]="true" 
+                  severity="contrast"
+                  pTooltip="Download my CV 😊" 
+                  tooltipPosition="top" 
+                  (onClick)="downloadPdf()"/>
+        <p-button icon="pi pi-github" 
+                  [outlined]="true" 
+                  [rounded]="true" 
+                  severity="contrast" 
+                  class="social-buttons" 
+                  pTooltip="Visit my GitHub page" 
+                  tooltipPosition="top"
+                  (onClick)="visitPage(socials.GITHUB)"/>
+        <p-button icon="pi pi-linkedin" 
+                  [outlined]="true" 
+                  [rounded]="true" 
+                  severity="contrast" 
+                  class="social-buttons" 
+                  pTooltip="Open my LinkedIn profile" 
+                  tooltipPosition="top"
+                  (onClick)="visitPage(socials.LINKEDIN)"/>
+        <p-button icon="pi pi-instagram" 
+                  [outlined]="true" 
+                  [rounded]="true" 
+                  severity="contrast" 
+                  class="social-buttons" 
+                  pTooltip="Get in touch on Instagram" 
+                  tooltipPosition="top"
+                  (onClick)="visitPage(socials.INSTAGRAM)"/>
+      </div>
     </div>
-    <span class="text-justify">I am a developer specialized in Angular, passionate about gaming and everything related
-      to the Japanese language and culture
-      (始めまして). I like to write code that is as clean and easy to understand as possible, to learn new things, and to be
-      someone the team can rely on when needed.</span>
-    <div class="flex w-20rem justify-content-between align-items-center">
-      <p-button label="Download CV" 
-                icon="pi pi-download" 
-                [outlined]="true" 
-                [rounded]="true" 
-                severity="contrast"
-                pTooltip="Download my CV 😊" 
-                tooltipPosition="top" 
-                (onClick)="downloadPdf()"/>
-      <p-button icon="pi pi-github" 
-                [outlined]="true" 
-                [rounded]="true" 
-                severity="contrast" 
-                class="social-buttons" 
-                pTooltip="Visit my GitHub page" 
-                tooltipPosition="top"
-                (onClick)="visitPage(socials.GITHUB)"/>
-      <p-button icon="pi pi-linkedin" 
-                [outlined]="true" 
-                [rounded]="true" 
-                severity="contrast" 
-                class="social-buttons" 
-                pTooltip="Open my LinkedIn profile" 
-                tooltipPosition="top"
-                (onClick)="visitPage(socials.LINKEDIN)"/>
-      <p-button icon="pi pi-instagram" 
-                [outlined]="true" 
-                [rounded]="true" 
-                severity="contrast" 
-                class="social-buttons" 
-                pTooltip="Get in touch on Instagram" 
-                tooltipPosition="top"
-                (onClick)="visitPage(socials.INSTAGRAM)"/>
-    </div>
-  </div>
-  <p-image src="assets/images/adrian.jpg" width="400px" height="400px" class="profile-image"></p-image>
+    <p-image src="assets/images/adrian.jpg" width="400px" height="400px" class="profile-image"></p-image>
+</div>
+<div class="experience-tags flex flex-wrap justify-content-evenly mt-6 gap-2">
+  <p-tag [style]="{background: 'linear-gradient(to right, #0078D7, #005A9E)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/azure-devops.svg" alt="SVG Icon" />
+    <span class="px-2">Azure DevOps</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #0db7ed, #0073ec)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/docker.svg" alt="SVG Icon" />
+    <span class="px-2">Docker</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #E0234E, #A81D3C)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/angular.svg" alt="SVG Icon" />
+    <span class="px-2">Angular</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #303030, #202020)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/express.svg" alt="SVG Icon" />
+    <span class="px-2">Express</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #F0DB4F, #E5B928)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/javascript.svg" alt="SVG Icon" />
+    <span class="px-2">JavaScript</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #99424f, #6a2b36)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/jest.svg" alt="SVG Icon" />
+    <span class="px-2">Jest</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #007FFF, #005BBB)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/material-ui.svg" alt="SVG Icon" />
+    <span class="px-2">Material UI</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #47A248, #356E3F)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/mongodb.svg" alt="SVG Icon" />
+    <span class="px-2">MongoDB</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #E0234E, #A81D3C)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/nestjs.svg" alt="SVG Icon" />
+    <span class="px-2">NestJS</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #339933, #2b7a2c)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/node-js.svg" alt="SVG Icon" />
+    <span class="px-2">NodeJS</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #336791, #204d74)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/postgresql.svg" alt="SVG Icon" />
+    <span class="px-2">PostgreSQL</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #FF6C37, #CC572D)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/postman.svg" alt="SVG Icon" />
+    <span class="px-2">Postman</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #0288D1, #0277BD)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/primeng.svg" alt="SVG Icon" />
+    <span class="px-2">PrimeNG</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #61DAFB, #21A1F1)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/react.svg" alt="SVG Icon" />
+    <span class="px-2">React</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #B7178C, #A0147B)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/rxjs.svg" alt="SVG Icon" />
+    <span class="px-2">RxJS</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #CF649A, #A14E73)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/scss.svg" alt="SVG Icon" />
+    <span class="px-2">SCSS</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #6DBD27, #67C93D)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/swagger.svg" alt="SVG Icon" />
+    <span class="px-2">Swagger</span>
+  </p-tag>
+
+  <p-tag [style]="{background: 'linear-gradient(to right, #3178C6, #225B94)'}">
+    <img width="20px" height="20px" src="../../assets/svgs/typescript.svg" alt="SVG Icon" />
+    <span class="px-2">TypeScript</span>
+  </p-tag>
 </div>
