@@ -47,7 +47,7 @@ p-menubarsub {
             width: 7.2rem;
         }
 
-        .p-menuitem-link { 
+        .p-menuitem-link {
             padding-left: 0.5rem;
         }
     }
@@ -163,4 +163,50 @@ p-carousel {
         right: 3rem !important;
     }
 
+}
+
+
+// ---------------------- Tags ---------------------- //
+.experience-tags {
+
+    .p-element {
+        position: relative;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+    }
+
+    .p-element:hover {
+        transform: translateY(-5px);
+    }
+
+    .p-element::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+        transform: skewX(-30deg);
+        z-index: 1;
+        transition: none;
+    }
+
+    .p-element:hover::before {
+        animation: slide-across 1s forwards;
+    }
+
+    @keyframes slide-across {
+        0% {
+            left: -100%;
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+}
+
+p-tag {
+    cursor: default;
 }
