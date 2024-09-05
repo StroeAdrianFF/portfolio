@@ -5,7 +5,7 @@
         "githubUrl": "https://github.com/StroeAdrianFF/Japanese-Izakaya",
         "liveUrl": "https://adrian-stroe.ro/izakaya/home",
         "imgLink": "/assets/images/izakaya.jpg",
-        "disabled": "true",
+        "disabled": true,
         "disabledMessage": "The GitHub repository is private, but you can still view the website."
     },
     {
@@ -14,7 +14,7 @@
         "githubUrl": "https://github.com/StroeAdrianFF/portfolio",
         "liveUrl": "https://adrian-stroe.ro",
         "imgLink": "/assets/images/resume.jpg",
-        "disabled": "false",
+        "disabled": false,
         "disabledMessage": ""
     }
 ]

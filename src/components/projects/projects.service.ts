@@ -13,7 +13,7 @@ export class ProjectsService {
   getProjects(): Observable<IProject[]> {
     return of(projects.map(project => ({
       ...project,
-      disabled: project.disabled === 'true'
+      disabled: project.disabled
     })));
   }
 }
