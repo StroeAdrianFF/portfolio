@@ -205,6 +205,12 @@ p-carousel {
             left: 100%;
         }
     }
+
+    width: 60% !important;
+
+    @media screen and (max-width: 1149px) {
+        width: 50% !important;
+    }
 }
 
 p-tag {
